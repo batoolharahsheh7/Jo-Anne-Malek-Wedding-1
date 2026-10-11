@@ -2414,8 +2414,11 @@ const website =
 function openInvitation() {
     opening.style.display = "none";
 
-    weddingMusic.currentTime = 0;
-    weddingMusic.play();
+  weddingMusic.currentTime = 0;
+
+weddingMusic.play().catch(function(error) {
+    console.log("Music playback failed:", error);
+});
 
     openingVideo.style.display = "block";
     openingVideo.currentTime = 0;
