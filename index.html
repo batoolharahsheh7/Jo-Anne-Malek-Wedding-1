@@ -4,7 +4,7 @@
 <head>  <meta charset="UTF-8">  <meta name="viewport"  
 content="width=device-width, initial-scale=1.0">
 
-<title>JO-Anne & Malek</title>  <style>  
+<title>Jo-Anne & Malek</title>  <style>  
   
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');  
   
@@ -1071,7 +1071,7 @@ top: -7px;
     font-size: clamp(42px, 9vw, 65px);
     font-weight: normal;
     line-height: 1.1;
-    margin-bottom: 22px;
+    margin-bottom: 3px!important;
     color: #765047;
 }
 
@@ -1082,7 +1082,7 @@ top: -7px;
     gap: 8px;
     color: #765047;
     font-size: 19px;
-    margin-bottom: 30px;
+    margin-bottom: 10px!important;
 }
 
 .gift-page-divider span {
@@ -1092,6 +1092,13 @@ top: -7px;
     background: #927264;
 }
 
+  .gift-heart {
+    width: 160px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+  
 .gift-page-message {
     font-family: Georgia, "Times New Roman", serif;
     font-size: clamp(14px, 3.5vw, 19px);
@@ -1110,6 +1117,8 @@ top: -7px;
     line-height: 2;
     overflow-wrap: anywhere;
     color: #68453e;
+  -webkit-text-fill-color: #68453e;
+text-decoration: none;
 }
 
 .gift-page-bank p {
@@ -1219,7 +1228,7 @@ preload="auto"
 
     <img  
         src="Card.png"  
-        alt="Malek & JO-Anne Wedding Invitation"  
+        alt="Malek & Jo-Anne Wedding Invitation"  
     >  
 
 </section>
@@ -1280,7 +1289,7 @@ preload="auto"
             <img  
 class="couple-photo"  
 src="صورة العرسان.png"  
-alt="Malek & JO-Anne"
+alt="Malek & Jo-Anne"
 
 > 
 
@@ -1384,11 +1393,9 @@ alt="Malek & JO-Anne"
             A note on gifts
         </h1>
 
-        <div class="gift-page-divider">
-            <span></span>
-            ♡
-            <span></span>
-        </div>
+      <div class="gift-page-divider">
+    <img src="القلب.png" alt="" class="gift-heart">
+      </div>
 
         <div class="gift-page-message">
 
@@ -1440,8 +1447,8 @@ alt="Malek & JO-Anne"
 
   <p class="rsvp-new-intro">
     Kindly let us know if you will
-    be joining us,<br>
-    By December 4, 2026 ♡
+    be joining us <br>
+    by December 4, 2026
   </p>
 
 <!-- HEART -->  
@@ -1553,7 +1560,7 @@ alt="Malek & JO-Anne"
             type="submit"  
             class="rsvp-new-submit"  
         >  
-            SUBMIT RSVP  
+            SUBMIT
         </button>  
 
 
@@ -1689,7 +1696,7 @@ padding: 30px 0;
 
 .rsvp-top-heart {  
 
-    width: 105px;  
+    width: 150px;  
 
     height: auto;  
 
@@ -2414,7 +2421,7 @@ function openInvitation() {
 
   weddingMusic.currentTime = 0;
 
-weddingMusic.play().catch(function(error) {
+  weddingMusic.play().catch(function(error) {
     console.log("Music playback failed:", error);
 });
 
